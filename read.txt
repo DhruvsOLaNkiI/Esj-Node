@@ -1,0 +1,36 @@
+using Express is like using node js feature neasy and more acessable
+
+
+req,res,next
+
+req get data from user to our server
+res server se kuch bhejna h use res eg user ko bhej na h 
+
+next use in midle ware 
+app.use (function(req,res,next){
+    next(); //send to routes
+})
+
+
+
+= Routes 
+/profile/lol
+/profile/pop
+etc
+
+use this /profile/:username = parameter/params
+app.get('/profile/:username) ,function(req,res){
+    res.send(`any writng thing ${req.params.username}`)
+}
+
+
+tempelate engeins  = ejs
+ejs setup karne ke liye
+I
+1) ejs install
+npm i ejs
+2) configure ejs
+app.set("view engine", "ejs");
+3) ek views folder banao
+4) usmein ejs files banao
+5 send ki jagah render karo
